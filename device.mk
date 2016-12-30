@@ -165,3 +165,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PACKAGES += libion
+
+# Update engine
+PRODUCT_PACKAGES += brillo_update_payload
