@@ -162,3 +162,6 @@ PRODUCT_COPY_FILES += \
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1
+
+# Camera
+PRODUCT_PACKAGES += libion
