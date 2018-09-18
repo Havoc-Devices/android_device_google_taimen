@@ -22,6 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit AOSP device configuration for  taimen
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
+TARGET_DEVICE := taimen
 
 # Override AOSP build properties
 PRODUCT_NAME := liquid_taimen
