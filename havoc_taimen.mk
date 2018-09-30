@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include DU common configuration
-include vendor/liquid/config/common_full_phone.mk
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -22,10 +19,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit AOSP device configuration for  taimen
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
+# Inherit some common Havoc stuff.
+$(call inherit-product, vendor/havoc/products/common.mk)
+
 TARGET_DEVICE := taimen
 
+TARGET_SCREEN_HEIGHT := 2880
+TARGET_SCREEN_WIDTH := 1440
+
 # Override AOSP build properties
-PRODUCT_NAME := liquid_taimen
+PRODUCT_NAME := havoc_taimen
 PRODUCT_DEVICE := taimen
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 2 XL
