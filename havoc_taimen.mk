@@ -23,6 +23,7 @@ $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 $(call inherit-product, vendor/havoc/config/common.mk)
 
 TARGET_DEVICE := taimen
+HAVOC_BUILD_TYPE := Official
 
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
