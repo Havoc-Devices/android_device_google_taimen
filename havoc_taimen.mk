@@ -40,6 +40,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
     BUILD_FINGERPRINT=google/taimen/taimen:9/PQ1A.181105.017.A1/5081125:user/release-keys \
     PRIVATE_BUILD_DESC="taimen-user 9 PQ1A.181105.017.A1 5081125 release-keys"
+    
+PRODUCT_COPY_FILES += \
+    device/google/taimen/prebuilt/substratum_key_1.0.apk:system/app/substratum_key_1.0.apk
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
 $(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
