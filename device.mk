@@ -131,3 +131,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_gl_phase_offset_ns=1000000
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+ PRODUCT_BOOT_JARS += \
+    telephony-ext
