@@ -45,4 +45,4 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/prebuilt/substratum_key_1.0.apk:system/app/substratum_key_1.0.apk
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
-$(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
