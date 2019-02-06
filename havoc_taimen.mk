@@ -44,5 +44,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     device/google/taimen/prebuilt/substratum_key_1.0.apk:system/app/substratum_key_1.0.apk
 
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=slothdabski
+
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
