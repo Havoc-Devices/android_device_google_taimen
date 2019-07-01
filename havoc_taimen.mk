@@ -38,8 +38,8 @@ PRODUCT_MANUFACTURER := Google
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=taimen \
-    BUILD_FINGERPRINT=google/taimen/taimen:9/PQ3A.190605.003/5524043:user/release-keys \
-    PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190605.003 5524043 release-keys"
+    BUILD_FINGERPRINT=google/taimen/taimen:9/PQ3A.190705.001/5565753:user/release-keys \
+    PRIVATE_BUILD_DESC="taimen-user 9 PQ3A.190705.001 5565753 release-keys"
 
 PRODUCT_COPY_FILES += \
     device/google/taimen/prebuilt/substratum_key_1.0.apk:system/app/substratum_key_1.0.apk
